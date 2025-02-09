@@ -1,0 +1,11 @@
+BEGIN;
+
+CREATE TABLE IF NOT EXISTS asset(
+    name   TEXT NOT NULL,
+    UID    BIGINT NOT NULL,
+    data   BYTEA NOT NULL,
+    created_at  TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    primary key (name, UID)
+);
+
+COMMIT;

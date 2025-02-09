@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+#  app:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    ports:
+#      - '8080:8080'
+
+  postgres:
+    container_name: postgres
+    image: postgres
+    environment:
+      POSTGRES_USER: 'login'
+      POSTGRES_PASSWORD: 'pass'
+      POSTGRES_DB: 'db-name'
+    ports:
+      - '5432:5432'
