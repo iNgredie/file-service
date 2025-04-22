@@ -1,0 +1,77 @@
+# Version control and CI files
+**/.git
+**/.github
+**/.gitignore
+**/.gitattributes
+**/.dockerignore
+**/.gitlab-ci.yml
+
+# IDE and editor configurations
+**/.editorconfig
+**/.vscode
+**/.idea
+**/*.iws
+**/*.iml
+**/*.ipr
+
+# Build artifacts and temporary files
+**/bin/
+**/dist/
+**/draft/
+**/notes.txt
+**/*.test
+**/*.exe
+**/*.prof
+
+# Go-specific files to ignore
+**/vendor/         # Go dependencies directory
+**/go.mod~         # Backup go.mod files
+**/go.sum~         # Backup go.sum files
+**/__debug_bin     # Debug binaries
+
+# Logs and cache directories
+**/.cache/
+**/.history/
+**/*.log
+
+# Documentation files
+**/*.md
+
+# Kubernetes and infrastructure files
+**/.kube
+**/helm/
+**/charts/
+**/k8s/
+**/*.yaml
+**/*.yml
+
+# Test and coverage outputs
+**/coverage.txt
+**/coverage.out
+**/profile.out
+**/debug
+
+# Python-specific ignores (if mixed-language project)
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+**/.python-version
+**/.venv
+**/env/
+**/venv/
+**/ENV/
+**/env.bak/
+**/venv.bak/
+**/.env_test
+**/.mypy_cache/
+**/.pytest_cache/
+**/.hypothesis/
+**/.coverage
+**/.tox/
+**/.nox/
+**/htmlcov/
+**/nosetests.xml
+**/coverage.xml
+**/*.cover
+**/pip-log.txt
+**/pip-delete-this-directory.txt

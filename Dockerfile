@@ -16,6 +16,6 @@ COPY --from=modules /go/pkg /go/pkg
 
 COPY . .
 
-RUN CGO_ENABLED=0 go build -o /my-app ./cmd/app
+RUN CGO_ENABLED=0 go build -o /app ./cmd/app
 
-ENTRYPOINT ["/my-app"]
+CMD ["./app"]
